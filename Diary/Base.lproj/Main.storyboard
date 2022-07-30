@@ -221,8 +221,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pGM-ze-izx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pGM-ze-izx">
+                                <rect key="frame" x="0.0" y="86" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4yR-Aq-CVs">
                                     <size key="itemSize" width="414" height="128"/>
@@ -263,6 +263,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="80"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Qje-yh-BwW" id="Cna-jP-hnJ"/>
+                                            <outlet property="titleLabel" destination="1gz-he-jmb" id="22a-fa-oIi"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -277,6 +281,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ogh-Ep-dlp"/>
+                    <connections>
+                        <outlet property="collectionView" destination="pGM-ze-izx" id="bEz-io-D8K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fY-Ed-YJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
